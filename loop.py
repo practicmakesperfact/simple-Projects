@@ -35,20 +35,20 @@
 
 # write the python code that displays the first 10 natural numbers
 
-# x=1
-# while x<=10:
-#     print(x)
-#     x=x+1
+x=1
+while x<=10:
+    print(x)
+    x=x+1
 
 #  function
-# def func():
+def func():
        
-#  a = int(input("Enter the value of a:"))
-#  b = int(input("\nEnter the value of b:"))
-#  c = int(input("\nEnter the value of c:"))
-#  return a + b + c
-# result=func()
-# print(" ".join(["the sum is:",str(result)]))
+ a = int(input("Enter the value of a:"))
+ b = int(input("\nEnter the value of b:"))
+ c = int(input("\nEnter the value of c:"))
+ return a + b + c
+result=func()
+print(" ".join(["the sum is:",str(result)]))
 
 # for loop
 names = ['hayme', 'kidu','buze','jeles']
