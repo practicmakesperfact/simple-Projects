@@ -1,0 +1,30 @@
+
+.container h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2{
+  text-align: center;
+  margin-bottom: 40px;
+ 
+}
+#tweet-list{
+  display: block;
+  text-align: center;
+  
+}
+#tweet-list li{
+  align-items: center;
+  margin-top: 20px;
+}
+.remove-btn,
+.remove-btn:hover{
+  
+  font-size: 1.5rem;
+  color: red;
+  float: right;
+  margin-right: 200px;
+  transition: 0.5s;
+  cursor: pointer;
+}

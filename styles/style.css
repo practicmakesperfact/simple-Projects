@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.logo-icons {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  list-style-type: none;
+  background-color: #fff;
+  height: 60px;
+}
+
+.logo-icons li {
+  display: flex;
+  align-items: center;
+}
+
+/* ###################
+  nav ends
+################## */
+.heading {
+  display: flex;
+  height: 250px;
+  background: url(/images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: local;
+  color: #fff;
+  font-weight: 400;
+}
+
+.for-image {
+  margin-left: 17%;
+}
+
+.h1 {
+  margin-top: 10%;
+}
+
+.for-image h5 {
+  margin-top: 4%;
+  letter-spacing: 1px;
+}
+
+.search-input {
+  margin-top: 12px;
+  display: block;
+  background-color: #fff;
+}
+
+.search-input .align-inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input .align-inputs input::placeholder {
+  font-size: small;
+}
+
+.search-input .align-inputs input {
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+}
+
+/* 
+###################
+heading style end 
+################## */
+
+.icon-container {
+  display: block;
+  background-color: red;
+}
+
+.icon-container ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 120px;
+}
+
+.icons img {
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons p {
+  font-size: small;
+  margin-left: 50px;
+}
+
+/* 
+################
+course style begin
+#######################
+ */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 90px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px 0;
+  border-radius: 6px;
+}
+
+.paragraph {
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 500; 
+}
+
+.paragraph .person {
+  color: orangered;
+}
+
+#title {
+  font-weight: 700;
+  font-size: large;
+  margin-top: 7px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 50px;
+  background-color: aqua;
+  border-radius: 6px;
+  border: none;
+  outline: none; 
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: rgba(0, 255, 242, 0.671);
+}
+
+#normalPrice {
+  text-decoration: line-through;
+}
+
+#discountPrice {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* ##################
+FOOTER STYLE
+##################### */
+.footer-container {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container h4 {
+  text-align: center;
+  font-size: 12px;
+  line-height: 3px;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.social-media ul li {
+  display: inline;
+  margin-right: 90px;
+  list-style-type: none;
+  float: right;
+  margin-bottom: 80px;
+}
+
+.social-media ul li a {
+  text-decoration: none;
+}
+
+.social-media ul li a:hover {
+  color: saddlebrown;
+  cursor: pointer;
+}
+
+.footer-container p {
+  margin-left: 16px;
+  margin-bottom: 36px;
+  font-size: 10px;
+}
+
+/* Cart List Style */
+.cart-container {
+  position: relative; /* Position relative to contain the absolute positioned cart-list */
+}
+
+.cart-list {
+  display: none; /* Initially hide the cart list */
+  position: absolute; /* Position it absolutely to the cart icon */
+  top: 100%; /* Position below the cart icon */
+  left: 0; /* Align to the left */
+  padding: 20px; /* Padding for the cart list */
+  background-color: white; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  max-height: 400px; /* Set maximum height */
+  overflow-y: auto; /* Add vertical scroll if content exceeds max height */
+  z-index: 100; /* Ensure it's above other elements */
+}
+
+.cart-container:hover .cart-list {
+  display: flex; /* Show the cart list on hover */
+  flex-direction: column; /* Stack items vertically */
+  width: 400px;
+}
+
+.cart-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #eee; /* Add separator between items */
+}
+
+.cart-item span {
+  font-weight: 500;
+
+}
+.item-name{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.cart-item .remove {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem; /* Slightly larger text */
+  cursor: pointer; /* Pointer cursor */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.cart-item .remove:hover {
+  color: darkred; /* Darker red on hover */
+}
+
+/* Clear Cart Button Styles */
+.clear-cart {
+  margin-top: 20px; /* Space above the button */
+  text-align: center; /* Center the button */
+}
+
+.clear-cart button {
+  width: 100%; /* Full width */
+  padding: 10px 0; /* Vertical padding */
+  background-color: #ff4d4d; /* Red background */
+  color: white; /* White text */
+  font-size: 1.2rem; /* Font size */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.clear-cart button:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+  cursor: pointer; /* Pointer cursor */
+}
